@@ -13,11 +13,11 @@ Visando melhorar a organização Front-End dos projetos, foi necessário escolhe
 ------------├── **controllers**/ <br />
 ----------------├── Login.controller.js <br />
 ------------├── **services**/ <br />
-----------------├── **Factory**/ <br />
+----------------├── **Factories**/ <br />
 --------------------├── Login.factory.js <br />
-----------------├── **Service**/ <br />
+----------------├── **Services**/ <br />
 --------------------├── Login.service.js <br />
-------------├── **config**/ <br />
+------------├── **configs**/ <br />
 ----------------├── Login.config.js <br />
 
 ## Padrões de escrita JS
@@ -27,28 +27,28 @@ Visando melhorar a escrita de código e o padrão utilizado na empresa, escolhi 
 ### Por que AirBnb?
 Além de ser um padrão completo e robusto, o AirBnb é bem claro e detalhado em suas documentações, facilitando assim a evangelização do mesmo na empresa, ponto em que o **Idiomatic** fica devendo a quem utiliza-o. Conforme citado anteriormente, o **AirBnb** se destaca por ser completo e robusto, ao contrário do **Standard** onde são definidas regras bem genéricas, destinando o mesmo para projetos menores.
 
-### Convenções de nomeclatura
-Como sabemos, muitas vezes a nomeclatura de classes, funções, variáveis, entre outros, fica a critério do desenvolvedor. Isso pode resultar em uma desorganização do código, dificultando assim a manutenção e interpretação do código por outro desenvolvedor. 
+### Convenções de nomenclatura
+Como sabemos, muitas vezes a nomenclatura de classes, funções, variáveis, entre outros, fica a critério do desenvolvedor. Isso pode resultar em uma desorganização do código, dificultando assim a manutenção e interpretação do código por outro desenvolvedor. 
 Utilizando o padrão do [**AirBnb**](https://github.com/airbnb/javascript#naming-conventions) temos as recomendações de como devemos declarar nossas coleções e como poderiamos melhorar a escrita das mesmas.
 
-[**Veja aqui o padrão para nomeclatura de coleções**](https://github.com/airbnb/javascript#naming-conventions) <br />
+[**Veja aqui o padrão para nomenclatura de coleções**](https://github.com/airbnb/javascript#naming-conventions) <br />
 
-**Dicas para nomeclatura de coleções:**
+**Dicas para nomenclatura de coleções:**
 Devemos utilizar nomes sugestivos para nomear nossas coleções, o cenário ideal seria nomearmos as coleções sempre no verbo infinitvo, atribuindo assim a principal responsabilidade para o nome da mesma. <br />
 
 Veja o exemplo abaixo: <br />
 ```
-//Get User Logged Method
-	
-// bad
-const userLogged = id => {
-    // ...
-}
-	
-// good
-const getUserLogged = id => {
-    // ...
-}
+    //Get User Logged Method
+        
+    // bad
+    const userLogged = id => {
+        // ...
+    }
+        
+    // good
+    const getUserLogged = id => {
+        // ...
+    }
 ```
   
 ## Angular JS to Angular, React or Vue
