@@ -1,0 +1,38 @@
+// /* Settings
+//     ========================================================================== */
+    @import "1.settings/variables";
+
+// /* Tools
+//     ========================================================================== */
+//     @import "2.tools/bootstrap-grid/bootstrap-grid";
+    @import "2.tools/mixins";
+
+// /* Generic
+//     ========================================================================== */
+    @import "3.generic/normalize";
+    @import "3.generic/reset";
+
+// /* Base
+//     ========================================================================== */
+    @import "4.base/inputs";
+    @import "4.base/tables";
+    @import "4.base/typography";
+
+// /* Objects
+//     ========================================================================== */
+    @import "5.objects/navigation";
+    @import "5.objects/table";
+
+// /* Plugins
+//     ========================================================================== */
+    @import "6.plugins/font-awesome";
+
+// /* Componentes
+//     ========================================================================== */
+    @import "7.components/header";
+
+// /* Templates
+//     ========================================================================== */
+    @import "9.templates/layout";
+    @import "9.templates/print";
+    @import "9.templates/clientList";

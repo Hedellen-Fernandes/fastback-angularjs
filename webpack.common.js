@@ -1,20 +1,21 @@
-/* eslint-disable */
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-    	'app': path.join(__dirname, 'dev/app/app.js')
-  	},
-  	output: {
+    'app': path.join(__dirname, 'dev/app/app.js')
+  },
+
+  output: {
 		filename: 'bundle.js',
-		path: path.join(__dirname, '/dev/assets/js/'),
+		path: path.join(__dirname, '/build/assets/js/'),
 		devtoolLineToLine: true,
 		pathinfo: true,
 		sourceMapFilename: 'bundle.js.map',
-		publicPath: path.join(__dirname, 'dev/')
-	},
-	module: {
+		publicPath: path.join(__dirname, 'build/')
+  },
+
+  module: {
 		rules: [
 			{
 				test: /\.js$/,
@@ -58,14 +59,9 @@ module.exports = {
 				use: ['url?limit=10000&minetype=image/svg+xml']
 			}
 		]
-	},
-	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-	],
-	devServer: {
-		publicPath: '/',
-		contentBase: path.join(__dirname, '/dev'),
-		compress: true
-	},
-	devtool: 'eval'
+  },
+
+  plugins: [
+		new webpack.HotModuleReplacementPlugin()
+  ],
 };

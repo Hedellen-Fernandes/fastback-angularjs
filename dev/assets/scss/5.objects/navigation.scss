@@ -1,0 +1,50 @@
+/*  ==========================================================================
+    Navigation
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	 @media only screen {
+		.navbar {
+
+			background: $color-white !important;
+			border-bottom: 1px solid $color-gray-light;
+
+			.navbar-brand {
+				img {
+					width: 200px;
+				}
+			}
+
+			.navbar-nav {
+				.nav-link {
+					font-weight: 600;
+				}
+
+				.active {
+					&>.nav-link {
+						color: $color-danger;
+					}
+				}
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }
