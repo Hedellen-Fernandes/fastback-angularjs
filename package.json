@@ -1,0 +1,59 @@
+{
+  "name": "fastback-angularjs",
+  "version": "1.0.0",
+  "description": "The Fastback Boilerplate - AngularJS",
+  "main": "./app/helloWorldApp.js",
+  "scripts": {
+    "start": "npm i && npm run dev",
+    "lint": "npx eslint dev/app/**/*.js",
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hedellen-Fernandes/fastback-angularjs.git"
+  },
+  "keywords": [
+    "Boilerplate",
+    "Fastback"
+  ],
+  "author": "Hedellen Fernandes - Fagron Tech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hedellen-Fernandes/fastback-angularjs/issues"
+  },
+  "homepage": "https://github.com/Hedellen-Fernandes/fastback-angularjs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "husky": "^2.3.0",
+    "jasmine": "^3.4.0",
+    "jsdom": "^15.1.0",
+    "jsdom-global": "^3.0.2",
+    "karma": "^4.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "angular": "^1.7.8"
+  }
+}

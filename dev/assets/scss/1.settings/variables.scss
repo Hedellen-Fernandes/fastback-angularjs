@@ -1,0 +1,138 @@
+/*  ==========================================================================
+    Variables
+    ========================================================================== */
+
+    /*  ==========================================================================
+        Grid
+        ========================================================================== */
+        $total-columns : 12; /* Total of columns*/
+        $column-width  : 62px; /* Columns width*/
+        $gutter-width  : 36px; /* Space between the columns*/
+        $breath        : 20px; /* Option of lateral space for grid*/
+        $space         : 25px; /* Vertical space*/
+
+    /*  Breakpoints
+        ========================================================================== */
+        $breakpoint         : 768px;  /* Breakpoint for small devices (Phones and Tablets)*/
+        $breakpoint-medium  : 992px;  /* Breakpoint for medium devices (Desktops)*/
+        $breakpoint-large   : 1200px; /* Breakpoint for large devices (Desktops)*/
+
+    /*  ==========================================================================
+        Fonts
+        ========================================================================== */
+        $font-family: Arial, sans-serif;
+
+    /*  ==========================================================================
+        Colors
+        ========================================================================== */
+        /* Brand */
+        $color-primary:     #1972D1;
+        $color-secondary:   #5CB85C;
+        $color-tertiary:    #D9534F;
+
+        /* Default */
+        $color-white:         #fff;
+        $color-gray-lightest: #EEE;
+        $color-gray-light:    #f5f5f5;
+        $color-gray:          #999;
+        $color-gray-dark:     #666;
+        $color-gray-darkest:  #333;
+        $color-black:         #222;
+        $color-default:       $color-gray;
+
+        /* Alert */
+        $color-info:          #457eaf;
+        $color-info-light:    #cfe6f7;
+        $color-warning:       #f79303;
+        $color-warning-light: #fff4c6;
+        $color-success:       #24a78c;
+        $color-success-light: #c6eed7;
+        $color-danger:        #e53212;
+        $color-danger-light:  #f4ceca;
+
+    /*  Forms
+        ========================================================================== */
+
+        /*  Inputs
+            ========================================================================== */
+            $color-border-input: $color-gray-light;
+            $color-input: $color-gray-darkest;
+
+            /*  Placeholder
+                ========================================================================== */
+                $placeholder-font-size: 14px;
+                $color-placeholder: $color-gray;
+
+            /*  Required tip
+                ========================================================================== */
+                $color-required-tip: $color-gray-dark;
+                $required-tip-font-size: 14px;
+
+            /*  Required field
+                ========================================================================== */
+                $color-required: $color-gray-darkest;
+                $required-font-size: 14px;
+
+    /*  ==========================================================================
+        Buttons
+        ========================================================================== */
+        $btn-font-size: 14px;
+
+        /*  Colors
+            ========================================================================== */
+
+            /*  Default
+                ========================================================================== */
+                $btn-bg: $color-default;
+                $btn-color: #666;
+                $btn-hover-bg: darken($btn-bg, 5%);
+
+            /*  Primary
+                ========================================================================== */
+                $btn-primary-bg: $color-primary;
+                $btn-primary-color: #fff;
+                $btn-primary-hover-bg: darken($btn-primary-bg, 5%);
+
+            /*  Success
+                ========================================================================== */
+                $btn-success-bg: $color-success;
+                $btn-success-color: #fff;
+                $btn-success-hover-bg: darken($btn-success-bg, 5%);
+
+            /*  Danger
+                ========================================================================== */
+                $btn-danger-bg: $color-danger;
+                $btn-danger-color: #fff;
+                $btn-danger-hover-bg: darken($btn-danger-bg, 5%);
+
+        /*  Social share
+            ========================================================================== */
+            /* Facebook */
+            $color-social-facebook: #3B5997;
+            $border-social-facebook: #2B4663;
+            $hover-social-facebook: darken($color-social-facebook, 5%);
+
+            /* Twitter */
+            $color-social-twitter: #2CA9E1;
+            $border-social-twitter: #2995BC;
+            $hover-social-twitter: darken($color-social-twitter, 5%);
+
+            /* Google Plus */
+            $color-social-google-plus: #dd4b39;
+            $border-social-google-plus: #C0392B;
+            $hover-social-google-plus: darken($color-social-google-plus, 5%);
+
+            /* Linkedin */
+            $color-social-linkedin: #0073B4;
+            $border-social-linkedin: #055472;
+            $hover-social-linkedin: darken($color-social-linkedin, 5%);
+
+            /* Pinterest */
+            $color-social-pinterest: #CD1D1F;
+            $border-social-pinterest: #8C191E;
+            $hover-social-pinterest: darken($color-social-pinterest, 5%);
+
+            /* RSS */
+            $color-social-rss: #FF6501;
+            $border-social-rss: #C74803;
+            $hover-social-rss: darken($color-social-rss, 5%);
